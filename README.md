@@ -3,7 +3,7 @@
 How to Play?
  1) Clone this repo.
  2) Open Project and Configure your JavaFX
- 3) goto ColorSwitch-->src-->mainWindow-->MainPageMain, and run it.
+ 3) goto ColorSwitchGame-->src-->mainWindow-->MainPageMain, and run it.
  
  Some Snips of  the Application. 
  
