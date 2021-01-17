@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="myStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainWindow.MainPageController">
+    <ImageView fitHeight="506.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Background.jpg" />
+    </ImageView>
+    <BorderPane prefHeight="413.0" prefWidth="589.0">
+        <bottom>
+            <HBox alignment="CENTER" prefHeight="71.0" prefWidth="568.0" spacing="40.0" BorderPane.alignment="CENTER">
+                <Button fx:id="newGame" mnemonicParsing="false" onMouseClicked="#handleNewGame" prefHeight="44.0" prefWidth="153.0" style="-fx-background-color: pink; -fx-text-fill: PURPLE; -fx-background-radius: 30;" text="NEW GAME">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.9605262875556946" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button fx:id="resumeGame" mnemonicParsing="false" onMouseClicked="#handleResumeGame" prefHeight="44.0" prefWidth="153.0" style="-fx-background-color: PINK; -fx-text-fill: PURPLE; -fx-background-radius: 30;" text="RESUME GAME">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="1.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button fx:id="exit" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="44.0" prefWidth="153.0" style="-fx-background-color: PINK; -fx-text-fill: PURPLE; -fx-background-radius: 30;" text="EXIT">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="1.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+            </HBox>
+        </bottom>
+        <center>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+                <Arc fx:id="innerArc1" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="70.0" radiusY="70.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="innerArc2" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="70.0" radiusY="70.0" startAngle="90.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="innerArc3" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="70.0" radiusY="70.0" startAngle="180.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="innerArc4" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="70.0" radiusY="70.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+
+                <Arc fx:id="middleArc1" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="95.0" radiusY="95.0" startAngle="180.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="middleArc2" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="95.0" radiusY="95.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="middleArc3" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="95.0" radiusY="95.0" startAngle="270.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="middleArc4" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="95.0" radiusY="95.0" startAngle="90.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+
+                <Arc fx:id="outerArc1" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="120.0" radiusY="120.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="outerArc2" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="120.0" radiusY="120.0" startAngle="180.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="outerArc3" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="120.0" radiusY="120.0" startAngle="90.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+                <Arc fx:id="outerArc4" centerX="170.0" centerY="230.0" fill="#ff090500" layoutX="-11.0" layoutY="-44.0" length="90.0" radiusX="120.0" radiusY="120.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="20.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect></Arc>
+
+            </AnchorPane>
+        </center>
+        <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="568.0" BorderPane.alignment="CENTER">
+                <HBox layoutX="14.0" layoutY="4.0" prefHeight="84.0" prefWidth="556.0">
+                    <Label prefHeight="84.0" prefWidth="27.0" text="C" textFill="WHITE">
+                        <font>
+                            <Font name="Verdana Bold" size="65.0" />
+                        </font>
+                        <effect>
+                            <Bloom />
+                        </effect>
+                    </Label>
+                </HBox>
+                <Arc fx:id="leftTopArc1" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="leftTopArc2" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="leftTopArc3" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="180.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="leftTopArc4" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="90.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Label layoutX="126.0" layoutY="4.0" text="L" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold" size="65.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </Label>
+                <Arc fx:id="rightTopArc1" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="rightTopArc2" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="rightTopArc3" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="180.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Arc fx:id="rightTopArc4" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-204.0" layoutY="-181.0" length="90.0" radiusX="22.0" radiusY="22.0" startAngle="90.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="8.0">
+                    <effect>
+                        <Reflection />
+                    </effect></Arc>
+                <Label layoutX="226.0" layoutY="-2.0" text="R" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="65.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </Label>
+                <Label layoutX="290.0" layoutY="6.0" prefHeight="78.0" prefWidth="335.0" text="SWITCH" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold" size="60.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </Label>
+            </AnchorPane>
+        </top>
+        <left>
+            <AnchorPane prefHeight="307.0" prefWidth="114.0" BorderPane.alignment="CENTER">
+                <BorderPane.margin>
+                    <Insets left="20.0" />
+                </BorderPane.margin>
+                <ImageView fx:id="settingImage" fitHeight="162.0" fitWidth="78.0" onMouseClicked="#handleSettingImage" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Images/setting.png" />
+                    <effect>
+                        <Glow />
+                    </effect>
+                </ImageView>
+            </AnchorPane>
+        </left>
+        <right>
+            <AnchorPane prefHeight="328.0" prefWidth="87.0" BorderPane.alignment="CENTER">
+                <Button fx:id="helpButton" mnemonicParsing="false" onMouseClicked="#handleHelpButton" prefHeight="63.0" prefWidth="80.0" style="-fx-background-color: WHITE;">
+                    <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Images/help.png" />
+
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip style="-fx-background-color: YELLOW; -fx-text-fill: BLACK;" text="CLICK TO KNOW HOW TO PLAY" />
+                    </tooltip>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </Button>
+                <BorderPane.margin>
+                    <Insets right="20.0" />
+                </BorderPane.margin>
+            </AnchorPane>
+        </right>
+    </BorderPane>
+</StackPane>

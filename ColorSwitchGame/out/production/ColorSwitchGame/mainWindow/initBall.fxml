@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainWindow.NewGame">
+    <ImageView fitHeight="489.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Background.jpg" />
+    </ImageView>
+    <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="489.0" prefWidth="452.0">
+        <Label prefHeight="56.0" prefWidth="455.0" text="SELECT BALL COLOR" textFill="AQUA">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="40.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" />
+            </VBox.margin>
+        </Label>
+        <RadioButton fx:id="rb1" mnemonicParsing="false" text="RED" textFill="RED">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="25.0" />
+            </font>
+            <padding>
+                <Insets left="150.0" top="40.0" />
+            </padding>
+            <toggleGroup>
+                <ToggleGroup fx:id="colorGroup" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rb2" mnemonicParsing="false" selected="true" text="AQUA" textFill="AQUA" toggleGroup="$colorGroup">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="25.0" />
+            </font>
+            <padding>
+                <Insets left="150.0" top="20.0" />
+            </padding>
+        </RadioButton>
+        <RadioButton fx:id="rb3" mnemonicParsing="false" text="YELLOW" textFill="YELLOW" toggleGroup="$colorGroup">
+            <padding>
+                <Insets left="150.0" top="20.0" />
+            </padding>
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="25.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rb4" mnemonicParsing="false" text="MAGENTA" textFill="MAGENTA" toggleGroup="$colorGroup">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="25.0" />
+            </font>
+            <padding>
+                <Insets left="150.0" top="20.0" />
+            </padding>
+        </RadioButton>
+        <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#selectColor" style="-fx-background-color: PINK; -fx-background-radius: 20;" text="SELECT" textFill="MAGENTA">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="150.0" top="30.0" />
+            </VBox.margin>
+        </Button>
+        <fx:define>
+            <ToggleGroup fx:id="colorGroup" />
+        </fx:define>
+    </VBox>
+</StackPane>

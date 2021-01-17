@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pauseWindow.PauseController">
+    <ImageView fitHeight="600.0" fitWidth="450.0" pickOnBounds="true">
+        <Image url="@../Images/Background.jpg"/>
+    </ImageView>
+    <ImageView fx:id="resumeButton" fitHeight="150.0" fitWidth="182.0" layoutX="150.0" layoutY="225.0"
+               onMouseClicked="#handleResume" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Continue_to_play.png"/>
+    </ImageView>
+    <ImageView fx:id="home" fitHeight="84.0" fitWidth="89.0" layoutX="43.0" layoutY="34.0" onMouseClicked="#handleHome"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/home.png"/>
+    </ImageView>
+    <Label layoutX="157.0" layoutY="158.0" prefHeight="59.0" prefWidth="150.0" text="PAUSE" textFill="WHITE">
+        <font>
+            <Font name="Candara" size="49.0"/>
+        </font>
+    </Label>
+</AnchorPane>

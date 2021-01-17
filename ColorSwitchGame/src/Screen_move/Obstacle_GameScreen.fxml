@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.2">
+    <ImageView fitHeight="715.0" fitWidth="755.0" pickOnBounds="true" >
+        <Image url="@../Images/Background.jpg" />
+    </ImageView>
+
+</AnchorPane>

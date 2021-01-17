@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Obstacle_Collide.ObstacleCollisionController">
+    <ImageView fitHeight="630.0" fitWidth="450.0">
+        <Image url="@../Images/Background.jpg" />
+    </ImageView>
+    <ImageView fx:id="homeView" fitHeight="69.0" fitWidth="76.0" layoutX="31.0" layoutY="42.0" onMouseClicked="#handleHome" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/backButton.png" />
+    </ImageView>
+    <Pane layoutX="113.0" layoutY="15.0" prefHeight="87.0" prefWidth="247.0">
+        <Label layoutX="28.0" layoutY="21.0" prefHeight="50.0" prefWidth="27.0" text="C" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="44.0" />
+            </font>
+            <effect>
+                <Bloom />
+            </effect>
+        </Label>
+        <Arc fx:id="leftTopArc1" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-215.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="leftTopArc2" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-215.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="leftTopArc3" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-215.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="leftTopArc4" centerX="300.0" centerY="230.0" fill="#ff090500" layoutX="-215.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Label layoutX="110.0" layoutY="23.0" text="L" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="40.0" />
+            </font>
+            <effect>
+                <Bloom />
+            </effect>
+        </Label>
+        <Arc fx:id="rightTopArc1" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-245.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="RED" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="rightTopArc2" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-245.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0" stroke="YELLOW" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="rightTopArc3" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-245.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0" stroke="MAGENTA" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Arc fx:id="rightTopArc4" centerX="400.0" centerY="230.0" fill="#ff090500" layoutX="-245.0" layoutY="-181.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0" stroke="AQUA" strokeLineCap="BUTT" strokeWidth="5.0">
+            <effect>
+                <Reflection />
+            </effect></Arc>
+        <Label layoutX="178.0" layoutY="23.0" text="R" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="40.0" />
+            </font>
+            <effect>
+                <Bloom />
+            </effect>
+        </Label>
+    </Pane>
+    <Label layoutX="145.0" layoutY="94.0" prefHeight="54.0" prefWidth="182.0" text="SWITCH" textFill="WHITE">
+        <font>
+            <Font name="Verdana" size="43.0" />
+        </font>
+        <effect>
+            <Bloom />
+        </effect>
+    </Label>
+    <TextField fx:id="Score_id" editable="false" focusTraversable="false" layoutX="186.0" layoutY="218.0" prefHeight="56.0" prefWidth="120.0" style="-fx-background-color: #222222 ; -fx-text-fill: white" text="0">
+        <font>
+            <Font name="System Bold" size="41.0" />
+        </font>
+    </TextField>
+    <Pane layoutX="-1.0" layoutY="182.0" prefHeight="54.0" prefWidth="450.0" style="-fx-background-color: #373737">
+        <Label layoutX="157.0" layoutY="-2.0" prefHeight="56.0" prefWidth="136.0" text="SCORE" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="35.0" />
+            </font>
+        </Label>
+    </Pane>
+    <TextField fx:id="Best_Score_id" editable="false" focusTraversable="false" layoutX="186.0" layoutY="343.0" prefHeight="56.0" prefWidth="120.0" style="-fx-background-color: #191919 ; -fx-text-fill: white" text="0">
+        <font>
+            <Font name="System Bold" size="41.0" />
+        </font>
+    </TextField>
+    <Pane layoutX="-1.0" layoutY="307.0" prefHeight="54.0" prefWidth="450.0" style="-fx-background-color: #FA8F41">
+        <Label layoutX="107.0" layoutY="-2.0" prefHeight="56.0" prefWidth="254.0" text="BEST SCORE" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="35.0" />
+            </font>
+        </Label>
+    </Pane>
+    <ImageView fx:id="restartView" fitHeight="106.0" fitWidth="182.0" layoutX="171.0" layoutY="423.0" onMouseClicked="#handleRestartView" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Replay.png" />
+    </ImageView>
+    <TextField fx:id="total_star_collected" editable="false" focusTraversable="false" layoutX="51.0" layoutY="485.0" prefHeight="56.0" prefWidth="120.0" style="-fx-background-color: #191919 ; -fx-text-fill: white" text="0">
+        <font>
+            <Font name="System Bold" size="41.0" />
+        </font>
+    </TextField>
+    <ImageView fitHeight="62.0" fitWidth="95.0" layoutX="42.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Stars.png" />
+    </ImageView>
+    <TextField editable="false" focusTraversable="false" layoutX="314.0" layoutY="428.0" prefHeight="56.0" prefWidth="76.0" rotate="-10.1" style="-fx-background-color: #191919 ; -fx-text-fill: #FFCC4B" text="-3">
+        <font>
+            <Font name="System Bold" size="32.0" />
+        </font>
+    </TextField>
+    <ImageView fx:id="starResume" fitHeight="114.0" fitWidth="117.0" layoutX="327.0" layoutY="450.0" onMouseClicked="#ReduceAndStart" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/Continue.png" />
+    </ImageView>
+
+
+</AnchorPane>
